@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+}
+
+nav{
+    background-color: #274c8e;
+    position: fixed;
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 100;
+    height: 2.5rem;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('https://picsum.photos/1200/800?random=1');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem;
+    color: white;
+    margin-top: 2.5rem;
+}
+
+.hero-text {
+    z-index: 1;
+}
+.hero-text h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+.hero-text a {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.delgerengui-tovch {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: yellow;
+    color: rgb(27, 25, 25);
+    font-weight: bold; 
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 35px;
+    margin: 1rem;
+    margin-top: 1rem;
+}
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    color: darkblue;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.profile-picture {
+     width: 200px;
+     height: 200px; 
+     border-radius: 50%;
+     object-fit: cover;
+}
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-grid {   
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.skill-grid:hover {
+    transform: translateY(-5px);
+}
+
+.skill-grid h3 {
+    font-size: 1.3rem;
+    color: #274c8e;
+    margin-bottom: 0.5rem;
+}
+.skill-grid p {
+    font-size: 1rem;
+    color: #555;
+}
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.project-grid {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.project-grid:hover {
+    transform: translateY(-5px);
+}
+.project-grid h3 {
+    font-size: 1.3rem;
+    color: #274c8e;
+    margin-bottom: 0.5rem;
+}
+.project-grid p {
+    font-size: 1rem;
+    color: #555;
+}
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+#contact input, #contact textarea {
+    padding: 1rem;
+    border: 1px solid #274c8e;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+#contact textarea {
+    min-height: 150px;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+#contact button {
+    padding: 0.75rem;
+    background-color: #274c8e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#contact button:hover {
+    background-color: aqua;
+}
+footer {
+    background-color: #274c8e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
